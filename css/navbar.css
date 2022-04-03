@@ -72,6 +72,10 @@ li {
     text-decoration: underline;
     font-size: 1.01em;
 }
+.active a {
+    border-bottom: 3px solid var(--orange_2);
+    font-weight: bolder;
+}
 
 .navbar_item {
     display: inline;
@@ -174,7 +178,7 @@ li {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1050px) {
     .mobile_icon {
         display: none;
         position: absolute;
@@ -189,7 +193,7 @@ li {
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1050px) {
     .navbar_links_list {
         display: none;
     }

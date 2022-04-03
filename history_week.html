@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <title>AAPI Lexington Heritage</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar_wrapper">
+        <header class="navbar">
+            <h3 class="navbar_title"><a href="home.html"><img src="images/logo.png" class="logo" /></a></h3>
+            <nav>
+                <div class="mobile_icon container" onclick="openMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                
+                <aside id="mobile_menu">
+                    <div class="icon change" onclick="closeMobileMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="mobile_wrapper">
+                        <li class="active navbar_item navbar_link mobile_navbar_link">
+                            <a href="#">History Week</a>
+                        </li>
+                        <li class="navbar_item navbar_link mobile_navbar_link">
+                            <a href="#">Art Week</a>
+                        </li>
+                        <li class="navbar_item navbar_link mobile_navbar_link">
+                            <a href="#">Food Week</a>
+                        </li>
+                        <li class="navbar_item navbar_link mobile_navbar_link">
+                            <a href="#">Celebration Week</a>
+                        </li>
+                </div>
+                </aside>
+
+                <ul class="navbar_links_list">
+                    <li class="active navbar_item navbar_link">
+                        <a href="#">History Week</a>
+                    </li>
+                    <li class="navbar_item navbar_link">
+                        <a href="#">Art Week</a>
+                    </li>
+                    <li class="navbar_item navbar_link">
+                        <a href="#">Food Week</a>
+                    </li>
+                    <li class="navbar_item navbar_link">
+                        <a href="#">Celebration Week</a>
+                    </li>
+                </ul> 
+            </nav>
+        </header>
+    </div>
+</body>
+<script>
+    function openMobileMenu(x) {
+        document.getElementById("mobile_menu").style.opacity = 100;
+        document.getElementById("mobile_menu").style.top = 0;
+    }
+
+    function closeMobileMenu(x) {
+        document.getElementById("mobile_menu").style.opacity = 0;
+        document.getElementById("mobile_menu").style.top = "-100%";
+    }
+</script>
+</html>
