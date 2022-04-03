@@ -1,0 +1,23 @@
+:root {
+    --light: #F7F5FB;
+    --dark: #2A3D45;
+    --orange_1: #F58A07;
+    --orange_2: #F9AB55;
+
+    --text_color: var(--orange_2);
+    --text_color_hover: var(--orange_1);
+}
+
+.main_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+}
+.main_blurb {
+    grid-column: 2;
+    padding: 50px;
+    max-width: 800px;
+    justify-self: center;
+
+    color: var(--dark);
+    text-align: center;
+}
