@@ -1,0 +1,20 @@
+:root {
+    --light: #F7F5FB;
+    --dark: #2A3D45;
+    --orange_1: #F58A07;
+    --orange_2: #F9AB55;
+
+    --text_color: var(--orange_2);
+    --text_color_hover: var(--orange_1);
+}
+
+.dark_text {
+    color: var(--dark);
+}
+
+.header {
+    margin-top: 10px;
+}
+.list {
+    width: 100%;
+}
