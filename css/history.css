@@ -14,9 +14,10 @@ body {
     display: flex;
     flex-direction: column;
 
-    height: clamp(100vh, 100vh, 100vh);
+    height: 100vh;
 }
 
+/* General Formatting */
 .blurb {
     max-width: 800px;
     text-align: center;
@@ -29,46 +30,19 @@ body {
     align-items: center;
     padding: 50px;
 }
-.grid_column_2 {
-    grid-column: 2;
-}
-.grid_column_3 {
-    grid-column: 3;
-}
-
-.main_description_wrapper {
-    grid-column: 2 / 4;
-
-    font-size: 20px;
-}
-.summary_description_wrapper {
-    grid-column: 3;
-    height: var(--img_height);
-
-    background-color: var(--light);
-}
-
-.history_wrapper {
+.grid {
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 10fr 10fr 1fr;
+    grid-template-columns: 1fr 20fr 1fr;
     background-color: var(--orange_2);
 }
-.history_blurb {
-    color: var(--orange_1);
+.flex {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
 }
 
-.description {
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-.film_img {
-    justify-self: center;
-
-    height: var(--img_height);
-}
 .learn_more {
     text-decoration: none;
     background-color: var(--orange_1);
@@ -80,4 +54,78 @@ body {
 
     align-self: center;
     cursor: pointer;
+}
+
+/* Headers */
+.main_description_wrapper {
+    grid-column: 2 / 4;
+
+    font-size: 20px;
+}
+.summary_description_wrapper {
+    grid-column: 3;
+    min-height: var(--img_height);
+
+    background-color: var(--light);
+}
+
+/* Call to Action */
+.call {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light);
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 1210px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.socials {
+    margin: 20px;
+    background-color: var(--orange_1);
+}
+.learn_more h3 a {
+    color: var(--light);
+}
+
+/* Movie Setup */
+.row_2 {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.film_img {
+    justify-self: center;
+
+    height: var(--img_height);
+}
+/* Movie Information */
+.history_blurb {
+    color: var(--orange_1);
+}
+.description {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1050px){
+    .row_2 {
+        flex-direction: column;
+    }
+
+    .film_img {
+        width: 30%;
+        height: auto;
+
+        align-self: center;
+    }
+
+    body {
+        min-height: 100vh;
+        height: auto;
+    }
 }

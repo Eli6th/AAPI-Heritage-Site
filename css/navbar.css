@@ -178,7 +178,7 @@ li {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1051px) {
     .mobile_icon {
         display: none;
         position: absolute;
