@@ -42,6 +42,17 @@ body {
     display: flex;
     flex-direction: column;
 }
+.center {
+    justify-self: center;
+    align-self: center;
+}
+
+.orange1_text {
+    color: var(--orange_1);
+}
+.large_text {
+    font-size: 25px;
+}
 
 .learn_more {
     text-decoration: none;
