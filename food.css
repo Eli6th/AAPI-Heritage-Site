@@ -1,0 +1,111 @@
+:root {
+    --light: #F7F5FB;
+    --dark: #2A3D45;
+    --orange_1: #F58A07;
+    --orange_2: #F9AB55;
+
+    --text_color: var(--orange_2);
+    --text_color_hover: var(--orange_1);
+
+    --img_height: 435px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+/* General Formatting */
+.blurb {
+    max-width: 800px;
+    text-align: center;
+    justify-self: center;
+    color: white;
+}
+.wrapper {
+    
+    align-items: center;
+    padding: 50px;
+}
+.grid {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    background-color: var(--orange_2);
+}
+.flex {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn_more {
+    text-decoration: none;
+    background-color: var(--orange_1);
+    color: var(--light);
+
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    align-self: center;
+    cursor: pointer;
+}
+
+/* Headers */
+.main_description_wrapper {
+    grid-column: 2 / 4;
+
+    font-size: 20px;
+}
+.summary_description_wrapper {
+    grid-column: 3;
+    min-height: var(--img_height);
+    min-width: var(--imge_height);
+    background-color: var(--light);
+    text-align: center;
+}
+.cookbook_wrapper{
+    grid-column: 3;
+    min-height: var(--img_height);
+    min-width: var(--imge_height);
+    background-color: var(--orange_2);
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px; 
+}
+.learn_more {
+    text-decoration: none;
+    background-color: var(--orange_1);
+    color: var(--light);
+
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    align-self: center;
+    cursor: pointer;
+}
+@media screen and (max-width: 1050px){
+    .row_2 {
+        flex-direction: column;
+    }
+
+    .film_img {
+        width: 30%;
+        height: auto;
+
+        align-self: center;
+    }
+
+    body {
+        min-height: 100vh;
+        height: auto;
+    }
+}
