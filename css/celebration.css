@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* General Formatting */
@@ -32,6 +32,7 @@ body {
 }
 .grid {
     height: 100%;
+    flex-grow: 1;
 
     display: grid;
     grid-template-columns: 1fr 20fr 1fr;
@@ -134,10 +135,5 @@ body {
         height: auto;
 
         align-self: center;
-    }
-
-    body {
-        min-height: 100vh;
-        height: auto;
     }
 }

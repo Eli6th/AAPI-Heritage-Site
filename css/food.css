@@ -13,8 +13,9 @@
 body {
     display: flex;
     flex-direction: column;
-
-    height: 100vh;
+    
+    min-height: 100vh;
+    height: auto;
 }
 
 /* General Formatting */
@@ -25,12 +26,12 @@ body {
     color: white;
 }
 .wrapper {
-    
     align-items: center;
     padding: 50px;
 }
 .grid {
     height: 100%;
+    flex-grow: 1;
 
     display: grid;
     grid-template-columns: 1fr 20fr 1fr;
@@ -39,6 +40,17 @@ body {
 .flex {
     grid-column: 2;
     display: flex;
+    flex-direction: column;
+}
+.space_between {
+    justify-content: space-between;
+}
+.left_text {
+    text-align: left;
+}
+
+.buy_link {
+    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -63,15 +75,14 @@ body {
 }
 .summary_description_wrapper {
     grid-column: 3;
-    min-height: var(--img_height);
-    min-width: var(--imge_height);
+    min-height: 0;
+    /* min-width: var(--imge_height); */
     background-color: var(--light);
     text-align: center;
 }
 .cookbook_wrapper{
     grid-column: 3;
     min-height: var(--img_height);
-    min-width: var(--imge_height);
     background-color: var(--orange_2);
     text-align: center;
     margin-top: 10px;
@@ -102,10 +113,5 @@ body {
         height: auto;
 
         align-self: center;
-    }
-
-    body {
-        min-height: 100vh;
-        height: auto;
     }
 }
