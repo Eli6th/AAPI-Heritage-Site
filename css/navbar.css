@@ -20,8 +20,8 @@ li {
     --dark: #2A3D45;
     --orange_1: #F58A07;
     --orange_2: #F9AB55;
-
-    --text_color: var(--orange_2);
+    --orange-3: #ffeed4;
+    --text_color: var(--light);
     --text_color_hover: var(--orange_1);
 }
 
@@ -29,10 +29,14 @@ li {
 .navbar_wrapper {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 90% 1fr;
+    grid-template-columns: 1fr 100% 1fr;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    
 }
 
 .navbar {
+
     position: relative;
     grid-column: 2;
     display: flex;
@@ -40,12 +44,13 @@ li {
     justify-content: space-between;
     align-items: center;
 
-    width: 90%;
-    box-sizing: border-box;
+    width: 95%;
+    box-sizing: content-box;
     padding: 0;
     text-align: center;
 
     margin: 0px 10%;
+    
 }
 
 .navbar_links_list {
@@ -60,7 +65,7 @@ li {
     transition: all 0.3s ease 0s;
 
     float: left;
-    color: var(--text_color);
+    color: var(--orange_2);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -68,7 +73,7 @@ li {
     font-weight: bold;
 }
 .navbar_link a:hover {
-    color: var(--orange_1);
+    color: var(--orange-3);
     text-decoration: underline;
     font-size: 1.01em;
 }
@@ -111,7 +116,7 @@ li {
     z-index: 998;
     width: 100%;
     min-height: 100%;
-    background: white;
+    background: var(--orange_1);
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
@@ -147,7 +152,9 @@ li {
     cursor: pointer;
     outline: none;
 }
-
+.nav {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
 /* Creating mobile menu button UI */
 .mobile_icon {
     display: none;
