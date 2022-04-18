@@ -3,13 +3,13 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
+    
 }
 .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: var(--orange_1);
+    background-color: var(--orange_2);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -32,6 +32,11 @@
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+}
+.timeline_container a:hover {
+    color: var(--orange_1);
+    text-decoration: underline;
+    font-size: 1.01em;
 }
 .timeline_header {
     margin-bottom: 20px;
@@ -77,7 +82,7 @@
     flex-direction: column;
 
     padding: 20px 30px;
-    background-color: var(--orange_2);
+    background-color: rgba(249, 171, 85, 0.7);;
     color: var(--light);
     position: relative;
     border-radius: 6px;
@@ -86,7 +91,7 @@
     text-decoration: none;
     background-color: var(--light);
     color: var(--orange_2);
-
+    
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
