@@ -3,7 +3,7 @@
     --dark: #2A3D45;
     --orange_1: #F58A07;
     --orange_2: #F9AB55;
-
+    --orange-3: #ffeed4;
     --text_color: var(--orange_2);
     --text_color_hover: var(--orange_1);
 }
@@ -24,6 +24,7 @@
 /* Main Body Information */
 .main_wrapper {
     display: grid;
+    margin-top:20px;
     grid-template-columns: 1fr 90% 1fr;
     background-color: var(--orange_2);
 }
@@ -31,7 +32,14 @@
     color: var(--light);
     text-align: center;
 }
+.body_wrapper{
+    background-image:url('/Users/irenegao/Downloads/AAPI-Heritage-Site-main 2/images/home_background.jpg');
+    background-size: cover;
+    font-size: 20px;
+    grid-column: 2 / 4;
+    width:100%;
 
+}
 @media screen and (max-width: 650px) {
     .main_wrapper {
         display: flex;
