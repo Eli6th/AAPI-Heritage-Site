@@ -3,11 +3,9 @@
     --dark: #2A3D45;
     --orange_1: #F58A07;
     --orange_2: #F9AB55;
-
+    --orange-3: #ffeed4;
     --text_color: var(--orange_2);
     --text_color_hover: var(--orange_1);
-
-    --img_height: 435px;
 }
 
 body {
@@ -32,7 +30,7 @@ body {
 .grid {
     height: 100%;
     flex-grow: 1;
-
+    
     display: grid;
     grid-template-columns: 1fr 20fr 1fr;
     background-color: var(--orange_2);
