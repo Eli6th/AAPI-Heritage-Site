@@ -18,9 +18,12 @@ body {
 
 
 .history_description_wrapper {
-    background-image: url('/Users/irenegao/Downloads/AAPI-Heritage-Site-main 2/images/History Blub.jpeg');
-
+    background-image: url('../images/Movie_background.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    
     font-size: 20px;
     grid-column: 2 / 4;
     width:100%;
