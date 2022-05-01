@@ -132,7 +132,7 @@ body {
   min-height: 445px;
   width:100%;
   align-items: center;
-  
+  justify-content: center;
 }
 
 /* Call to Action */

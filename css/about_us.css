@@ -1,0 +1,84 @@
+/* Root variable formatting */
+:root {
+    --logo_size: 150px;
+
+    --white: white;
+    --light: #F7F5FB;
+    --dark: #2A3D45;
+    --orange_1: #F58A07;
+    --orange_2: #F9AB55;
+    --orange_3: #ffeed4;
+    --text_color: var(--white);
+    --text_color_hover: var(--orange_1);
+}
+
+.column {
+    float: left;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+
+    box-shadow: 0 4px 8px 0 var(--orange_2);
+}
+
+.about_image {
+    height: 500px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: var(--white);
+}
+
+.about_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.about_container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.contact {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: var(--white);
+    background-color: var(--orange_1);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: var(--orange_2);
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+    .card {
+        flex-direction: column;
+    }
+    
+}

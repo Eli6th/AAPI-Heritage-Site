@@ -137,6 +137,7 @@ body {
     min-height:var(--image-height);
     width:100%;
     align-items: center;
+    justify-content: center;
     font-size: larger;
   }
 
