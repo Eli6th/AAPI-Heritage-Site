@@ -3,11 +3,10 @@
     --dark: #2A3D45;
     --orange_1: #F58A07;
     --orange_2: #F9AB55;
-
+    --orange-3: #ffeed4;
     --text_color: var(--orange_2);
     --text_color_hover: var(--orange_1);
-
-    --img_height: 435px;
+    --img_height: 435px;  
 }
 
 body {
@@ -17,18 +16,36 @@ body {
     min-height: 100vh;
 }
 
+
+.celebration_description_wrapper {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    font-size: 20px;
+    grid-column: 2 / 4;
+    width:100%;
+    margin-top: 20px;
+}
+.opacity_wrapper{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 /* General Formatting */
 .blurb {
     max-width: 800px;
     text-align: center;
     justify-self: center;
-    color: white;
+    color: var(--text_color);
 }
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
+
 }
 .grid {
     height: 100%;
@@ -43,21 +60,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-.center {
-    justify-self: center;
-    align-self: center;
-}
-
-.orange1_text {
-    color: var(--orange_1);
-}
-.large_text {
-    font-size: 25px;
-}
 
 .learn_more {
     text-decoration: none;
-    background-color: var(--orange_1);
+    background-color: var(--orange_3);
     color: var(--light);
 
     margin-top: 10px;
@@ -69,24 +75,27 @@ body {
 }
 
 /* Headers */
-.main_description_wrapper {
+
+
+.celebration_description_wrapper {
     grid-column: 2 / 4;
 
     font-size: 20px;
+    display: grid;
+    width: 100%;
+   
 }
 .summary_description_wrapper {
     grid-column: 3;
     min-height: var(--img_height);
 
     background-color: var(--light);
-    text-align: center;
 }
 
 /* Call to Action */
 .call {
     display: flex;
     flex-direction: row;
-    background-color: var(--light);
     align-self: center;
     align-items: center;
     justify-content: center;
@@ -124,7 +133,56 @@ body {
     text-align: left;
     margin-bottom: 10px;
 }
+.image_description_wrapper {
+    text-align: right;
+    grid-column: 3;
+    min-height:var(--image-height);
+    width:100%;
+    align-items: center;
+    font-size: larger;
+  }
 
+@media screen and (max-width: 1050px){
+    .row_2 {
+        flex-direction: column;
+    }
+
+    .film_img {
+        width: 30%;
+        height: auto;
+
+        align-self: center;
+    }
+
+    body {
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
+.cookbook_wrapper{
+    grid-column: 3;
+    min-height: var(--img_height);
+    background-color: var(--orange_2);
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px; 
+}
+.learn_more {
+    text-decoration: none;
+    background-color: var(--orange_1);
+    color: var(--light);
+
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    align-self: center;
+    cursor: pointer;
+}
 @media screen and (max-width: 1050px){
     .row_2 {
         flex-direction: column;
