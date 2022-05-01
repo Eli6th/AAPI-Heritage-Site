@@ -60,7 +60,7 @@
     }
 }
 
-.row_2 {
+.about_row {
     display: flex;
     flex-direction: row;
     background-color: var(--orange_2);
@@ -84,6 +84,11 @@
     min-height: 445px;
     align-items: center;
 }
+
+.sponsors_row {
+    display: flex;
+    flex-direction: column;
+}
 .sponsors {
     width: 100%;
     max-width: none;
@@ -96,6 +101,7 @@
 }
 .logo {
     justify-self: center;
+    align-self: center;
 }
 
 .about_image {
