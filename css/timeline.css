@@ -55,12 +55,6 @@
 .right {
     left: 50%;
 }
-.left .content {
-    box-shadow: 6px 6px 3px var(--dark);
-}
-.right .content {
-    box-shadow: 6px 6px 3px var(--dark);
-}
 .left::before {
     content: " ";
     height: 0;
@@ -115,7 +109,7 @@
 
 /* Specific looks for each box */
 .box_1 {
-    background-color: rgba(249, 171, 85, 0.9);
+    background-color: rgba(249, 171, 85, 1);
 }
 .box_2 {
     background-color: var(--orange_2);

@@ -1,15 +1,21 @@
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
 
     box-shadow: 5px 5px 5px 5px var(--dark);
-    border-top: 3px solid black;
 
     padding: 39px;
-    background-color: var(--light);
+    background-color: var(--orange_2);
 }
 
+.instagram {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+.email {
+    grid-column: 3/4;
+    grid-row: 1;
+}
 .footer_link {
     display: flex;
     flex-direction: column;

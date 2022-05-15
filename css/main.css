@@ -26,16 +26,27 @@
 
 /* Main Body Information */
 .main_wrapper {
+    background-image: url('../images/parade.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.background {
+    width: 100%;
+
     display: grid;
-    margin-top: 20px;
-    grid-template-columns: 1fr 60% 200px 1fr;
+    grid-template-columns: 1fr 90%1fr;
+
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .main_blurb {
     color: var(--light);
     text-align: center;
+    border-radius: 20px;
 }
 .main_image {
-    grid-column: 3 / 4;
+    grid-column: 2/3;
     max-width: 200px;
     max-height: fit-content;
     align-self: center;
