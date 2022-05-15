@@ -11,7 +11,7 @@
     margin-bottom: 20px;
 }
 .youtube_video {
-    width: 890px;
+    width: 850px;
     height: 500px;
 }
 
@@ -35,4 +35,34 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .youtube_video {
+        width: 550px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .youtube_video {
+        width: 350px;
+        height: 200px;
+    }
+
+    .producer_title {
+        margin: 20px;
+    }
+
+    .producer_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .youtube_video {
+        width: 250px;
+        height: 200px;
+    }
 }

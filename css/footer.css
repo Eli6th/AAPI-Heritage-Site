@@ -1,6 +1,7 @@
 .footer {
     display: grid;
     grid-template-columns: 5fr 1fr 1fr;
+    grid-column-gap: 15px;
 
     box-shadow: 5px 5px 5px 5px var(--dark);
 
