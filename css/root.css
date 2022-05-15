@@ -1,0 +1,29 @@
+:root {
+    --white: white;
+    --light: #F7F5FB;
+    --dark: #2A3D45;
+    --logo_orange: #D56632;
+    --logo_orange_2: #E57743;
+    --orange_1: #F58A07;
+    --orange_2: #F9AB55;
+    --orange_3: #ffeed4;
+    --light-purple: #a99ae0;
+    --seafoam: #80c8cb;
+    --blue1: #8bbed6;
+    --purple1: #6c49ad;
+    --yellow1: #f5f3ad;
+    --meat: #e9d1b7;
+
+    --text_color: var(--orange_2);
+    --text_color_hover: var(--orange_1);
+
+    --text_color_2: var(--white);
+
+    --title_text: 40px;
+    --subtitle_text: 20px;
+    --lg_text: 30px;
+    --med_text: 25px;
+    --small_text: 15px;
+
+    --logo_size: 150px;
+}

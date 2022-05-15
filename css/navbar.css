@@ -16,20 +16,6 @@ li {
     list-style: none;
 }
 
-/* Root variable formatting */
-:root {
-    --logo_size: 150px;
-
-    --white: white;
-    --light: #F7F5FB;
-    --dark: #2A3D45;
-    --orange_1: #F58A07;
-    --orange_2: #F9AB55;
-    --orange_3: #ffeed4;
-    --text_color: var(--white);
-    --text_color_hover: var(--orange_1);
-}
-
 /* Navbar CSS */
 .navbar_wrapper {
     display: grid;
@@ -75,7 +61,7 @@ li {
     font-weight: bold;
 }
 .navbar_link a:hover {
-    color: var(--orange_1);
+    color: var(--logo_orange);
     text-decoration: underline;
     font-size: 1.01em;
 }
@@ -118,7 +104,7 @@ li {
     z-index: 998;
     width: 100%;
     min-height: 100%;
-    background: var(--orange_1);
+    background: var(--logo_orange);
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;

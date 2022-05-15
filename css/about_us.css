@@ -1,17 +1,3 @@
-/* Root variable formatting */
-:root {
-    --logo_size: 150px;
-
-    --white: white;
-    --light: #F7F5FB;
-    --dark: #2A3D45;
-    --orange_1: #F58A07;
-    --orange_2: #F9AB55;
-    --orange_3: #ffeed4;
-    --text_color: var(--white);
-    --text_color_hover: var(--orange_1);
-}
-
 .column {
     float: left;
     width: 100%;

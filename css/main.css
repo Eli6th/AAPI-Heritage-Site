@@ -1,16 +1,10 @@
-:root {
-    --light: #F7F5FB;
-    --dark: #2A3D45;
-    --orange_1: #F58A07;
-    --orange_2: #F9AB55;
-    --orange-3: #ffeed4;
-    --text_color: var(--orange_2);
-    --text_color_hover: var(--orange_1);
-}
-
 .header {
     margin: 20px;
     text-align: center;
+    font-size: var(--title_text);
+}
+.subheader {
+    font-size: var(--subtitle_text);
 }
 .full_width {
     width: 100%;
@@ -24,17 +18,27 @@
     max-width: 800px;
     justify-self: center;
 }
+.banner {
+    background-color: var(--logo_orange_2);
+    border-top: 3px solid var(--dark);
+    border-bottom: 3px solid var(--dark);
+}
 
 /* Main Body Information */
 .main_wrapper {
     display: grid;
-    margin-top:20px;
-    grid-template-columns: 1fr 90% 1fr;
-    background-color: var(--orange_2);
+    margin-top: 20px;
+    grid-template-columns: 1fr 60% 200px 1fr;
 }
 .main_blurb {
     color: var(--light);
     text-align: center;
+}
+.main_image {
+    grid-column: 3 / 4;
+    max-width: 200px;
+    max-height: fit-content;
+    align-self: center;
 }
 .body_wrapper{
     background-image:url('./images/home_background.jpg');
@@ -42,16 +46,12 @@
     font-size: 20px;
     grid-column: 2 / 4;
     width:100%;
-
 }
 @media screen and (max-width: 650px) {
     .main_wrapper {
         display: flex;
-        background-color: var(--orange_2);
     }
     .main_blurb {
-        color: var(--light);
-        text-align: center;
         font-size: 10px;
     }
     .blurb {
@@ -64,7 +64,7 @@
 .about_row {
     display: flex;
     flex-direction: row;
-    background-color: var(--orange_2);
+
     color: white;
 }
 .opacity_wrapper{
@@ -77,8 +77,6 @@
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size:contain;
-    /* max-width:300px; */
-    /* max-height:445px; */
 }
 .summary_description_wrapper {
     display: flex;
@@ -110,7 +108,7 @@
     max-height: none;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 20px;
     padding: 20px;
 }
@@ -118,15 +116,17 @@
     justify-self: center;
     align-self: center;
 }
+.sponsor_description {
+    margin: 20px;
+    color: var(--dark);
+}
 
 .about_image {
     justify-self: center;
     width: 300px;
 }
+
 @media screen and (max-width: 850px) {
-    .sponsors {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     .about_row {
         flex-direction: column;
     }
@@ -135,6 +135,10 @@
     }
 }
 @media screen and (max-width: 650px) {
+    .main_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
     .row_2 {
         flex-direction: column;
     }

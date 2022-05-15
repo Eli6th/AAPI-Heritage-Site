@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    box-shadow: 5px 5px 5px 5px var(--dark);
+    border-top: 3px solid black;
+
+    padding: 39px;
+    background-color: var(--light);
+}
+
+.footer_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--dark);
+}
+
+@media screen and (max-width: 650px) {
+    .footer {
+        flex-direction: column;
+    }
+}
