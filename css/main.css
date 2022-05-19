@@ -54,7 +54,7 @@
 .body_wrapper{
     background-image:url('./images/home_background.jpg');
     background-size: cover;
-    font-size: 20px;
+    font-size: var(--med_text);
     grid-column: 2 / 4;
     width:100%;
 }
@@ -63,7 +63,7 @@
         display: flex;
     }
     .main_blurb {
-        font-size: 10px;
+        font-size: var(--subtitle_text);
     }
     .blurb {
         padding: 10px;
@@ -98,7 +98,7 @@
     align-items: center;
 }
 .about_description {
-    font-size: 25px;
+    font-size: var(--med_text);
     margin: 30px;
 }
 .partnered_row {

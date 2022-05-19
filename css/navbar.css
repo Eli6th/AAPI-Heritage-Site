@@ -57,13 +57,13 @@ li {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1em;
+    font-size: var(--small_text);
     font-weight: bold;
 }
 .navbar_link a:hover {
     color: var(--logo_orange);
     text-decoration: underline;
-    font-size: 1.01em;
+    font-size: 15.5px;
 }
 .active a {
     border-bottom: 3px solid var(--orange_2);
@@ -76,9 +76,8 @@ li {
 .navbar_title {
     display: inline-block;
     margin-bottom: 0;
-    font-size: 4ch;
     font-weight: 300;
-    font-size: 1.75em;
+    font-size: var(--lg_text);
 
     cursor: pointer;
 
@@ -120,7 +119,7 @@ li {
     color: var(--white);
     width: 100%;
 
-    font-size: 1.5em;
+    font-size: var(--med_text);
     font-weight: 400;
     text-align: center;
 
@@ -129,7 +128,7 @@ li {
 }
 .mobile_navbar_link a:hover {
     color: var(--orange_3);
-    font-size: 1.52em;
+    font-size: 27px;
 }
 
 .icon {
@@ -137,7 +136,6 @@ li {
     top: 1.2rem;
     right: 1.5rem;
     background: transparent;
-    font-size: 2rem;
     cursor: pointer;
     outline: none;
 }
@@ -181,7 +179,6 @@ li {
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 1.8rem;
         cursor: pointer;
     }
     #mobile_menu {
@@ -199,7 +196,7 @@ li {
     }
 
     .navbar_title {
-        font-size: 3ch;
+        font-size: 12px;
     }
     .navbar {
         width: auto;
