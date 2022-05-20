@@ -31,7 +31,16 @@ body {
     max-width: 800px;
     text-align: center;
     justify-self: center;
-    color: var(--light);
+    color: var(--orange_2);
+    font-size:1.7em;
+}
+
+
+.orange{
+    max-width: 800px;
+    text-align: center;
+    justify-self: center;
+    color: var(--orange_2);
 }
 .wrapper {
     display: flex;
@@ -124,8 +133,9 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 
-    background-color: var(--orange_2);
-    color: var(--light);
+    color: var(--orange_2);
+    background-color: white;
+    
 }
 .history_blurb {
     color: var(--orange_1);
@@ -133,6 +143,8 @@ body {
 .description {
     text-align: left;
     margin-bottom: 10px;
+    font-size: 2.1em;
+    color:var(--orange_1)
 }
 
 @media screen and (max-width: 1050px){
