@@ -115,6 +115,7 @@ body {
 
     height: var(--img_height);
 }
+
 /* Movie Information */
 .image_description_wrapper {
     text-align: left;
@@ -127,6 +128,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* Footer */
+.sponsor_description {
+    color: var(--dark);
 }
 
 @media screen and (max-width: 1050px){
