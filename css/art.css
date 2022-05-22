@@ -6,33 +6,6 @@ body {
     --min-height-body:500px;
 }
 
-.description_wrapper {
-  background-image: url('../images/parade.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-
-  font-size: var(--med_text);
-  grid-column: 2 / 4;
-  width:100%;
-  height:350px;
-  margin-top: 20px;
-}
-.opacity_wrapper{
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-.photo_wrapper{
-  float:left;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size:contain;
-  max-width:300px;
-  max-height:445px;
-}
-
 /* General Formatting */
 .title_blurb {
   max-width: 800px;
@@ -43,9 +16,10 @@ body {
 }
 .blurb {
   max-width: 800px;
-  text-align: center;
+  font-size: var(--med_text);
+  text-align: right;
   justify-self: center;
-  color: var(--orange_2);
+  color: var(--dark);
   background-position: center;
 }
 
@@ -84,9 +58,46 @@ body {
   cursor: pointer;
 }
 
+/* Title */
+.description_wrapper {
+  background-image: url('../images/Art_Page/art page background image.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-size: var(--med_text);
+  grid-column: 2 / 3;
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+  padding: 0px;
+}
+.opacity_wrapper{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.background {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 90%1fr;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+.photo_wrapper{
+  float:left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:contain;
+  max-width:300px;
+  max-height:445px;
+}
+
 /* Headers */
-
-
 .main_description_wrapper {
   grid-column: 2 / 4;
 
