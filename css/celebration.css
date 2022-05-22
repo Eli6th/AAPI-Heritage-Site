@@ -64,8 +64,6 @@ body {
 }
 
 /* Headers */
-
-
 .celebration_description_wrapper {
     grid-column: 2 / 4;
 
@@ -101,6 +99,9 @@ body {
 .learn_more h3 a {
     color: var(--light);
 }
+.register {
+    margin: 20px;
+}
 
 /* Movie Setup */
 .row_2 {
@@ -109,19 +110,12 @@ body {
     flex-direction: row;
     margin-bottom: 20px;
 }
-.film_img {
+.flyer {
     justify-self: center;
 
     height: var(--img_height);
 }
 /* Movie Information */
-.history_blurb {
-    color: var(--orange_1);
-}
-.description {
-    text-align: left;
-    margin-bottom: 10px;
-}
 .image_description_wrapper {
     text-align: left;
     grid-column: 3;
@@ -129,7 +123,11 @@ body {
     width:100%;
     align-items: center;
     font-size: var(--med_text);
-  }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 @media screen and (max-width: 1050px){
     .row_2 {
@@ -149,17 +147,6 @@ body {
     }
 }
 
-.cookbook_wrapper{
-    grid-column: 3;
-    min-height: var(--img_height);
-    background-color: var(--orange_2);
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px; 
-}
 .learn_more {
     text-decoration: none;
     background-color: var(--orange_1);
