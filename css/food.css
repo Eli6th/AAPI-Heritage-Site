@@ -7,7 +7,7 @@ body {
 
 
 .food_description_wrapper {
-    background-image: url('../images/food week main page art.jpg');
+    background-image: url('../images/Food_Page/aapi-dishes2.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -82,10 +82,10 @@ body {
 /* Call to Action */
 .call {
     display: flex;
-    flex-direction: row;
-    align-self: center;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-self: center;
 
     width: 100%;
     max-width: 1210px;
@@ -181,5 +181,64 @@ body {
         height: auto;
 
         align-self: center;
+    }
+}
+
+/* Food Panel */
+.panel_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: var(--logo_orange);
+}
+
+.panelist_header {
+    color: var(--dark);
+    font-size: var(--lg_text);
+}
+
+.panelist_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px;
+    background-color: var(--logo_orange);
+    color: var(--dark);
+}
+.panelist {
+    max-width: 400px;
+    max-height: 700px;
+    border: 1px solid var(--dark);
+    background-color: var(--light);
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.panelist_width {
+    min-width: 300px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1350px) {
+    .panelist_wrapper {
+        flex-direction: column;
+    }
+    .panelist {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .panelist_width {
+        min-width: 0px;
+        width: 80%;
     }
 }
