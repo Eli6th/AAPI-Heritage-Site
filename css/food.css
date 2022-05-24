@@ -242,3 +242,22 @@ body {
         width: 80%;
     }
 }
+
+/* Row 4 */
+.sponsor_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    color: var(--orange_1);
+}
+
+.sponsor_title {
+    font-size: var(--lg_text);
+    margin-bottom: 15px;
+}
+.sponsor_description {
+    font-size: var(--med_text);
+}
