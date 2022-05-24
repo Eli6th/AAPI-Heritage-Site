@@ -35,7 +35,9 @@ body {
     font-size: 1.7em;
     margin: 5px;
 }
-
+.padding {
+    padding: 12px;
+}
 
 .orange{
     max-width: 800px;
