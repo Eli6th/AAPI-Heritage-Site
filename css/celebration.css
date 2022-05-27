@@ -5,7 +5,6 @@ body {
     min-height: 100vh;
 }
 
-
 .celebration_description_wrapper {
     background-position: center center;
     background-repeat: no-repeat;
@@ -128,6 +127,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* Cultural Festival */
+.cultural_wrapper {
+    background-color: var(--logo_orange);
+}
+
+.cultural_title {
+    font-size: var(--lg_text);
+    color: var(--light);
 }
 
 /* Footer */
