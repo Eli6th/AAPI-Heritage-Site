@@ -133,10 +133,13 @@ body {
 .cultural_wrapper {
     background-color: var(--logo_orange);
 }
-
 .cultural_title {
     font-size: var(--lg_text);
     color: var(--light);
+}
+.festival_description {
+    color: var(--light);
+    font-size: var(--med_text);
 }
 
 /* Footer */
