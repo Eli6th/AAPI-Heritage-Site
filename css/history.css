@@ -32,7 +32,7 @@ body {
     text-align: center;
     justify-self: center;
     color: var(--orange_2);
-    font-size: 1.7em;
+    font-size: var(--med_text);
     margin: 5px;
 }
 .padding {
@@ -83,7 +83,7 @@ body {
 .main_description_wrapper {
     grid-column: 2 / 4;
 
-    font-size: 20px;
+    font-size: var(--med_text);
 }
 .summary_description_wrapper {
     grid-column: 3;
@@ -146,7 +146,7 @@ body {
 .description {
     text-align: left;
     margin-bottom: 10px;
-    font-size: 2.1em;
+    font-size: var(--med_text);
     color:var(--orange_1)
 }
 

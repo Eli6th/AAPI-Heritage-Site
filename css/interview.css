@@ -18,6 +18,7 @@
 .producer_wrapper {
     display: grid;
     grid-template-columns: 1fr 45% 45% 1fr;
+    background-color: var(--orange_2);
 }
 .producer {
     display: flex;
@@ -25,6 +26,9 @@
     align-items: center;
 
     padding: 30px;
+}
+.procuder_name {
+    margin: 10px;
 }
 .prod_1 {
     grid-column: 2/3;
@@ -42,6 +46,8 @@
     color: #E57743;
     text-align: center;
     font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -52,11 +58,6 @@
 }
 
 @media screen and (max-width: 670px) {
-    .youtube_video {
-        width: 350px;
-        height: 200px;
-    }
-
     .producer_title {
         margin: 20px;
     }
@@ -65,11 +66,14 @@
         display: flex;
         flex-direction: column;
     }
-}
-
-@media screen and (max-width: 670px) {
+    
     .youtube_video {
         width: 250px;
         height: 200px;
+    }
+
+    .sponsor_description {
+        border-radius: 0px;
+        margin-bottom: 0px;
     }
 }
