@@ -1,0 +1,32 @@
+.gallery_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.gallery_title {
+    grid-column: 1 / 7;
+    text-align: center;
+    font-size: var(--lg_text);
+}
+
+.gallery_card {
+    display: block;
+    padding: 20px;
+    border: 2px solid var(--light);
+    border-radius: 20px;
+
+    height: 200px;
+    width: 300px;
+}
+
+.card_img {
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    width: 100%;
+}
+.gallery_card:hover .card_img {
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    opacity: 0;
+    visibility: hidden;
+}
