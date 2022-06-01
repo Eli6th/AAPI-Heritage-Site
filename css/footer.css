@@ -1,7 +1,7 @@
 .footer {
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr;
-    grid-column-gap: 15px;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
 
     box-shadow: 5px 5px 5px 5px var(--dark);
 
@@ -13,8 +13,16 @@
     grid-column: 2/3;
     grid-row: 1;
 }
-.email {
+.facebook {
     grid-column: 3/4;
+    grid-row: 1;
+}
+.twitter {
+    grid-column: 4/5;
+    grid-row: 1;
+}
+.email {
+    grid-column: 5/6;
     grid-row: 1;
 }
 .footer_link {
@@ -29,6 +37,26 @@
 
 @media screen and (max-width: 650px) {
     .footer {
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .email {
+        grid-column: 2/3;
+        grid-row: auto;
+    }
+    .instagram {
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+    .facebook {
+        grid-column: 2/3;
+        grid-row: auto;
+    }
+    .twitter {
+        grid-column: 1/2;
+        grid-row: auto;
     }
 }
