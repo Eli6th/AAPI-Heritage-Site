@@ -5,7 +5,9 @@ body {
     min-height: 100vh;
 }
 
-
+.food_week_header {
+    color: white;
+}
 .food_description_wrapper {
     background-image: url('../images/Food_Page/aapi-dishes2.png');
     background-position: center center;
