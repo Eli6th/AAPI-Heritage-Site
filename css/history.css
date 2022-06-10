@@ -89,7 +89,7 @@ body {
     grid-column: 3;
     min-height: var(--img_height);
 
-    background-color: var(--light);
+    background-color: var(--white);
 }
 
 /* Call to Action */
@@ -132,6 +132,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-indent: 10%
 
     padding-top: 20px;
     padding-bottom: 20px;
@@ -148,6 +149,10 @@ body {
     margin-bottom: 10px;
     font-size: var(--med_text);
     color:var(--orange_1)
+}
+
+.about_blurb {
+    text-align: left;
 }
 
 @media screen and (max-width: 1050px){
