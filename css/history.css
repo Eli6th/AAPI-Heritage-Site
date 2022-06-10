@@ -125,6 +125,8 @@ body {
     padding-bottom: 20px;
     background-color: var(--orange_2);
     color: white;
+
+    width: 100%;
 }
 .film_img {
     justify-self: center;

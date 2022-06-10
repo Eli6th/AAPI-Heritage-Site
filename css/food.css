@@ -65,8 +65,6 @@ body {
 }
 
 /* Headers */
-
-
 .main_description_wrapper {
     grid-column: 2 / 4;
 
@@ -100,6 +98,19 @@ body {
     color: var(--light);
 }
 
+/* Discussion Wrapper */
+.panel_discussion_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 20px;
+}
+.panelist_description {
+    font-size: var(--small_text);
+    color: black;
+}
+
 /* Movie Setup */
 .row_2 {
     align-self: center;
@@ -111,6 +122,7 @@ body {
 
     height: var(--img_height);
 }
+
 /* Movie Information */
 .history_blurb {
     color: var(--orange_1);
