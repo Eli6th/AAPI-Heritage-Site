@@ -25,6 +25,10 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
 }
+.panel_wrapper {
+    background-color: var(--orange_1);
+    padding: 20px;
+}
 
 /* General Formatting */
 .blurb {
@@ -48,9 +52,9 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 20px;
-
 }
 .grid {
     height: 100%;
@@ -89,7 +93,7 @@ body {
     grid-column: 3;
     min-height: var(--img_height);
 
-    background-color: var(--white);
+    background-color: var(--light);
 }
 
 /* Call to Action */
@@ -118,7 +122,9 @@ body {
     align-self: center;
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: var(--orange_2);
+    color: white;
 }
 .film_img {
     justify-self: center;
@@ -132,14 +138,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-indent: 10%
 
     padding-top: 20px;
     padding-bottom: 20px;
 
-    color: var(--orange_2);
-    background-color: white;
-    
+    color: white;
+    background-color: var(--orange_2);
+}
+.movie_blurb {
+    color: white;
 }
 .history_blurb {
     color: var(--orange_1);

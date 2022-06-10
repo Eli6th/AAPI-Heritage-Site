@@ -163,7 +163,9 @@ body {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
-
+}
+.meeting_time {
+  width: 100%;
 }
 .film_img {
   justify-self: center;
