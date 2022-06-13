@@ -35,3 +35,26 @@
     opacity: 0;
     visibility: hidden;
 }
+
+.load_more {
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid var(--dark);
+    border-radius: 20px;
+
+    color: var(--light);
+    background-color: var(--orange_1);
+    font-size: var(--med_text);
+
+    align-self: center;
+
+    transition: color 300ms, background-color 300ms;
+}
+.load_more:hover {
+    color: var(--orange_1);
+    background-color: var(--light);
+
+    transition: color 300ms, background-color 300ms;
+}
