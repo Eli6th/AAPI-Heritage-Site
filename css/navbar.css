@@ -42,7 +42,8 @@ li {
 }
 
 .navbar_links_list {
-    display: block;
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
 }
 .navbar_link {
@@ -85,7 +86,6 @@ li {
 }
 .logo {
     width: var(--logo_size);
-    /* height: var(--logo_size); */
 }
 .navbar_title a {
     text-decoration: none;
@@ -106,6 +106,7 @@ li {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    top: 100%;
 }
 .dropdown:hover .dropdown-content {display: block;}
 
