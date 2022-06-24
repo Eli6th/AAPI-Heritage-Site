@@ -3,6 +3,7 @@ body {
     flex-direction: column;
 
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 .food_week_header {

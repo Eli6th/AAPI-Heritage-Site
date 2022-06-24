@@ -61,13 +61,7 @@
                         <a href="art_week.html">Art Week</a>
                     </li>
                     <li class="active navbar_item navbar_link">
-                        <div class="dropdown">
-                            <a href="food_week.html">Food Week</a>
-                            <div class="dropdown-content">
-                                <a href="#">Food Panel Discussion</a>
-                                <a href="#">Cookbook</a>
-                            </div>
-                        </div>
+                        <a href="food_week.html">Food Week</a>
                     </li>
                     <li class="navbar_item navbar_link">
                         <a href="celebration_week.html">Celebration Week</a>
@@ -107,7 +101,7 @@
         </div>
 
         <!-- Row 2 -->
-        <div class="panel_wrapper">
+        <div class="panel_wrapper" id="panel">
             <h2 class="panelist_header">
                 Our Panelists
             </h2>
@@ -147,7 +141,7 @@
         </div>
 
         <!-- Row 3 -->
-        <div class="row_2">
+        <div class="row_2" id="cookbook">
             <div class="image_description_wrapper wrapper">
                 <div class = "photo_wrapper wrapper">
                     <img src = "images/AAPI Food Festival flyer (Final).png" class="width_img" />
@@ -177,15 +171,5 @@
         <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=5m720Sv1Zh-HLRKKQpik4gZkCFPe6Sa7ff13-BRKMBs&cl=ffffff&w=a"></script>
     </p>
 </body>
-<script>
-    function openMobileMenu(x) {
-        document.getElementById("mobile_menu").style.opacity = 100;
-        document.getElementById("mobile_menu").style.top = 0;
-    }
-
-    function closeMobileMenu(x) {
-        document.getElementById("mobile_menu").style.opacity = 0;
-        document.getElementById("mobile_menu").style.top = "-100%";
-    }
-</script>
+<script type='text/javascript' src='navigation.js'></script>
 </html>
