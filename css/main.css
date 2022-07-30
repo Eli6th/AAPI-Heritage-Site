@@ -119,7 +119,7 @@
     max-height: none;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     row-gap: 20px;
     padding: 20px;
 }
@@ -134,7 +134,7 @@
     align-self: center;
 }
 .sponsor_description {
-    margin: 20px;
+    margin: 6px;
     color: var(--dark);
 }
 
