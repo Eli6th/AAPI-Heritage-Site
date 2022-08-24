@@ -22,3 +22,26 @@ function scrollCookbook() {
         behavior: 'smooth'
     });
 }
+
+// Scrolling from history page
+function scrollMovie() {
+    document.getElementById( 'movie' ).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+function scrollHistoryBook() {
+    document.getElementById( 'history_book' ).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+const openInNewWindow = event => {
+    event.preventDefault();
+    const {href, target} = event.currentTarget;
+    const features = "resizable";
+    window.open(href, target, features);
+  };
+  
+  
+  document.querySelector("a")
+    .addEventListener("click", openInNewWindow);
+    
