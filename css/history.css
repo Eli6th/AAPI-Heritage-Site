@@ -27,7 +27,7 @@ body {
 }
 .panel_wrapper {
     background-color: var(--orange_1);
-    padding: 20px;
+    padding: 40px;
 }
 
 /* General Formatting */
