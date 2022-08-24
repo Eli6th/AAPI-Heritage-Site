@@ -1,13 +1,19 @@
 .gallery_wrapper {
+    background-color: var(--orange_2);
+    background-size: cover; 
+
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: center;
     grid-gap: 10px;
     margin: 40px;
+    padding: 10px;
 }
 
 .gallery_title {
+    padding: 20px;
+
     grid-column: 1 / 4;
     text-align: center;
     font-size: var(--lg_text);
