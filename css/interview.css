@@ -41,9 +41,16 @@
     color:rgb(0, 0, 0);
 }
 
-.books_Movies_header {
+.books_movies_header {
     color: var(--white);
-    font-size: var(--med_text);
+    /*font-size: var(--med_text);*/
+    font-size: 30px;
+    text-align: center;
+}
+
+.books_movies_description {
+    font-size: 20px;
+    color: var(--white);
     text-align: center;
 }
 
