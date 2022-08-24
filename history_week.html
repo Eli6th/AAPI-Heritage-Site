@@ -46,7 +46,11 @@
                         </li>
                         <li class="navbar_item navbar_link mobile_navbar_link">
                             <a href="celebration_week.html">Celebration Week</a>
-                        </li>
+                        </li><!--
+                        <li class="navbar_item navbar_link mobile_navbar_link">
+                            <a href="about_us.html">About Us</a>
+                        </li> 
+                        -->
                 </div>
                 </aside>
 
@@ -55,7 +59,13 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li class="active navbar_item navbar_link">
-                        <a href="history_week.html">History Week</a>
+                        <div class="dropdown">
+                            <a href="history_week.html">History Week</a>
+                            <div class="dropdown-content">
+                                <a onclick="scrollMovie()">Movie screening</a>
+                                <a onclick="scrollHistoryBook()">History Book Shelf</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="navbar_item navbar_link">
                         <a href="art_week.html">Art Week</a>
@@ -66,6 +76,11 @@
                     <li class="navbar_item navbar_link">
                         <a href="celebration_week.html">Celebration Week</a>
                     </li>
+                    <!--
+                    <li class="navbar_item navbar_link">
+                        <a href="about_us.html">About Us</a>
+                    </li>  
+                    -->                  
                 </ul> 
             </nav>
         </header>
@@ -97,7 +112,7 @@
         </div>
 
         <!-- Row 2 -->
-        <div class="movie_about">
+        <div class="movie_about" id="movie">
             <h1 class="about_blurb">
                 WHAT IS IT ABOUT?
             </h1>
@@ -196,8 +211,10 @@
             Meet the Producers of Far East Deep South 
         </h1>
         <iframe class="youtube_video" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" type="text/html" src="https://www.youtube.com/embed/QEMfSQAqFH4?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode nl</a></small></div><div><small><a href="https://casinokortspel.com/">https://casinokortspel.com</a></small></div><div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode es</a></small></div><div><small><a href="https://sverigescasinosida.com/">https://sverigescasinosida.com</a></small></div><div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode es</a></small></div><div><small><a href="https://swedencasino.org/">https://swedencasino.org</a></small></div></iframe>
-        <h3> Moderators Grace Ou and Lina Ye interview Produce and Director Baldwin Chiu and Larrissa Lam</h3>
-        
+        <h3 class="procuder_name"> 
+            Moderators Grace Ou and Lina Ye interview Produce and Director Baldwin Chiu and Larrissa Lam
+        </h3>
+
         <br />
         <br />
 
@@ -218,7 +235,7 @@
                 <img src = "images/Baldwin Chu Image.jpg" class="width_img"/>
                 <h3 class="procuder_name">BALDWIN CHIU</h3>
                 <p>
-                    Teamed up with his wife, Larissa Lam, to produce Far East Deep South, and is also one of the film’s subjects along with his family. 
+                    Teamed up with his wife, Larissa Lam, to produce Far East Deep South, and is also one of the film's subjects along with his family. 
                     Chiu is a graduate of the Act One film producing program. 
                     Born in San Francisco and raised in Sacramento, 
                     Chiu is a fierce advocate for the increased inclusion of Asian American history in schools and has spoken at numerous conferences and universities. 
@@ -239,15 +256,22 @@
         </div>
     </div>
 
-    <div class="panel_wrapper">
-        <h2 class="books_Movies_header">
-            Come to Cary Memorial Library to check out some of our favorite AAPI books and movies! May 1st-31st
+    <div class="panel_wrapper" id="history_book">
+        <h2 class="books_movies_header">
+            Come to Cary Memorial Library to check out some of our favorite AAPI books and movies! 
+            <br />
+            May 1st-31st
         </h2>
         <div class="image_description_wrapper wrapper">
             <div class = "photo_wrapper wrapper">
                 <img src = "images/bookshelf.jpg" class="width_img" />
             </div>
         </div>
+        <h3 class="books_movies_description">
+            We partnered with Cary Memorial Library to help with the creation of
+            <br /> 
+            an AAPI bookshelf features various AAPI books and novels.
+        </h3>
     </div>
 
     <p hidden>
