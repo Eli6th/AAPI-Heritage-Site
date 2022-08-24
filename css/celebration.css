@@ -21,6 +21,113 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.cele_banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  
+}
+
+.cele_banner_wrapper {
+    background-image: url('../images/Celebration_Page/IMG_1750_50_3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    font-size: var(--med_text);
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 450px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.cele_background {
+    width: 100%;
+    height: 100%;
+  
+    display: grid;
+    grid-template-columns: 1fr 90%1fr;
+  
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.main_cele_blurb {
+    color: var(--light);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.cele_blurb {
+    grid-column: 2;
+    padding: 230px;
+    max-width: 1200px;
+    justify-self: center;
+}
+
+.cele_header_table_page {
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.cele_header {
+    margin: 40px;
+    text-align: center;
+    font-size: var(--title_text);
+}
+
+.cele_subheader {
+    font-size: var(--subtitle_text);
+}
+
+.table_imgs_wrapper {
+    background-color: var(--orange_2);
+    background-size: cover; 
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.table_imgs_body{
+    display: grid;
+    grid-template-columns: auto auto ;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.image_table_header {
+    color: var(--dark);
+    font-size: var(--lg_text);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.table_image{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table_imgs_wrapper_page {
+
+    display: grid;
+    grid-template-columns: auto auto ;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    margin: 40px;
+}
+
+.table_image_page{
+    border-radius: 5px;
+}
+
 /* General Formatting */
 .blurb {
     max-width: 800px;
